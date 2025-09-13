@@ -509,9 +509,17 @@ CONFIG_TIMA=y
 CONFIG_TIMA_LKMAUTH=y
 CONFIG_TIMA_LKM_BLOCK=y
 # CONFIG_TIMA_LKMAUTH_CODE_PROT is not set
+<<<<<<< HEAD:arch/arm64/configs/exynos7885-a7y18lte_defconfig
 CONFIG_UH=y
 CONFIG_UH_RKP=y
 # CONFIG_RKP_KDP is not set
+=======
+# CONFIG_UH is not set
+# CONFIG_UH_RKP is not set
+# CONFIG_RKP_KDP is not set
+# CONFIG_RKP_NS_PROT is not set
+# CONFIG_RKP_DMAP_PROT is not set
+>>>>>>> 54483dc60 (defconfig: enable OverlayFS and disable Samsung RKP & UH):arch/arm64/configs/exynos7885-gta3xlwifi_defconfig
 # CONFIG_BUILD_ARM64_APPENDED_DTB_IMAGE is not set
 
 #
@@ -1158,7 +1166,7 @@ CONFIG_OF_IRQ=y
 CONFIG_OF_NET=y
 CONFIG_OF_MDIO=y
 CONFIG_OF_RESERVED_MEM=y
-# CONFIG_OF_OVERLAY is not set
+CONFIG_OF_OVERLAY=y
 # CONFIG_PARPORT is not set
 CONFIG_BLK_DEV=y
 # CONFIG_BLK_DEV_NULL_BLK is not set
