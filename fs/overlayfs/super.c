@@ -254,8 +254,8 @@ const struct cred *ovl_override_creds(struct super_block *sb)
 	struct ovl_fs *ofs = sb->s_fs_info;
 
 	if (!ofs->config.override_creds)
-		return NULL;
-	return override_creds(ofs->creator_cred);
+        return NULL;
+    return ofs->creator_cred;
 }
 
 void ovl_revert_creds(const struct cred *old_cred)
