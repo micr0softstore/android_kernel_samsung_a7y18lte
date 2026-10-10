@@ -15,9 +15,9 @@ endif
 
 ifeq ($(SEC_BUILD_OPTION_VTS),false)
 ifeq ($(TARGET_BUILD_VARIANT), user)
-ifeq ($(SEC_BUILD_OPTION_PRODUCT_SHIP), true)
-ifeq ($(SEC_BUILD_OPTION_SELINUX_ENFORCE),true)
-ccflags-y += -DCONFIG_ALWAYS_ENFORCE=true
+ifeq ($(SEC_BUILD_OPTION_PRODUCT_SHIP), false)
+ifeq ($(SEC_BUILD_OPTION_SELINUX_ENFORCE),false)
+ccflags-y += -DCONFIG_ALWAYS_ENFORCE=false
 endif
 endif
 endif
